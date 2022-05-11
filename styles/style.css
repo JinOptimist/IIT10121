@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-block{
+    display: flex;
+}
+
+.left-menu{
+    width: 100px;
+}
+
+.content{
+    flex: 1;
+}
+
+.hot-key-block .header{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.hot-key {
+    color: blue;
+    background-color: aqua;
+}
+
+.fishes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fish{
+    border: 5px red solid;
+    border-radius: 26px;
+    /* padding: 4px; */
+    margin: 4px;
+}
+
+.fish .header{
+    text-align: center;
+    display: block;
+    background-color: brown;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fish:hover .header{
+    background-color: rgb(23, 229, 185);
+}
+
+img{
+    width: 100px;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Это я про конпки писал */
+.fish:hover .buttons .button{
+    color: red;
+}
+
+.buttons .button{
+    background-color: aqua;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid;
+}
+
+.buttons .button:hover{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.buttons .button:first-child{
+    border-bottom-left-radius: 20px;
+}
+.buttons .button:last-child{
+    border-bottom-right-radius: 20px;
+    border-right: none;
+}

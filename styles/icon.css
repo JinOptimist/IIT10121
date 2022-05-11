@@ -1,0 +1,26 @@
+.icon::before{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+    content: ' ';
+}
+
+.icon.setting::before{
+    background-image: url('../images/icon/settings_FILL0_wght400_GRAD0_opsz48.png');
+}
+
+.icon.setting:hover::before{
+    background-image: url('../images/icon/settings_FILL0_wght400_GRAD0_opsz48_hover.png');
+}
+
+
+.icon.heart::before{
+    background-image: url('../images/icon/favorite_FILL0_wght400_GRAD0_opsz48.png');
+}
+
+.icon.heart:hover::before{
+    background-image: url('../images/icon/favorite_FILL1_wght400_GRAD0_opsz48_hover.png');
+}
+
+
