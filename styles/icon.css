@@ -24,3 +24,7 @@
 }
 
 
+.icon.edit::before{
+    background-image: url('../images/icon/edit_FILL0_wght400_GRAD0_opsz48.png');
+}
+

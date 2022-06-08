@@ -1,21 +1,57 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
 }
 
-.main-block{
+.main-block {
     display: flex;
 }
 
-.left-menu{
-    width: 100px;
+.left-menu {
+    width: 300px;
 }
 
-.content{
+.left-menu .fly {
+    position: fixed;
+}
+
+.left-menu .button {
+    box-shadow: inset 0px 1px 0px 0px #a6827e;
+    background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+    background-color: #7d5d3b;
+    border-radius: 3px;
+    border: 1px solid #54381e;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #4d3534;
+
+    display: flex;
+    align-items: center;
+}
+
+.left-menu .button:hover {
+    background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+    background-color: #634b30;
+}
+
+.left-menu .button:active {
+    position: relative;
+    top: 1px;
+}
+
+.left-menu .button a {
+    color: #ffffff;
+}
+
+.content {
     flex: 1;
 }
 
-.hot-key-block .header{
+.hot-key-block .header {
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -26,19 +62,21 @@
     background-color: aqua;
 }
 
-.fishes{
+.fishes {
     display: flex;
     flex-wrap: wrap;
 }
 
-.fish{
+.fish {
     border: 5px red solid;
     border-radius: 26px;
     /* padding: 4px; */
     margin: 4px;
+    display: flex;
+    flex-direction: column;
 }
 
-.fish .header{
+.fish .header {
     text-align: center;
     display: block;
     background-color: brown;
@@ -46,26 +84,44 @@
     border-top-right-radius: 20px;
 }
 
-.fish:hover .header{
+.fish .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.fish .image-block{
+    flex: 1;
+}
+
+.fish .image-block .edit{
+    position: absolute;
+    display: none;
+}
+.fish:hover .image-block .edit{
+    display: block;
+}
+
+.fish:hover .header {
     background-color: rgb(23, 229, 185);
 }
 
-img{
-    width: 100px;
+img {
+    width: 500px;
 }
 
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
 }
 
 /* Это я про конпки писал */
-.fish:hover .buttons .button{
+.fish:hover .buttons .button {
     color: red;
 }
 
-.buttons .button{
+.buttons .button {
     background-color: aqua;
     flex: 1;
     display: flex;
@@ -73,15 +129,17 @@ img{
     border-right: 1px solid;
 }
 
-.buttons .button:hover{
+.buttons .button:hover {
     opacity: 0.2;
     cursor: pointer;
 }
 
-.buttons .button:first-child{
+.buttons .button:first-child {
     border-bottom-left-radius: 20px;
 }
-.buttons .button:last-child{
+
+.buttons .button:last-child {
     border-bottom-right-radius: 20px;
     border-right: none;
 }
+
