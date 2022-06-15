@@ -143,3 +143,17 @@ img {
     border-right: none;
 }
 
+.page{
+    display: none;
+}
+
+.page:target{
+    display: flex;
+}
+
+
+#table table td{
+    border: 1px solid #4d3534;
+    width: 100px;
+    background: #a6827e;
+}

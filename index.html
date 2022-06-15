@@ -15,6 +15,20 @@
     <div class="main-block">
         <div class="left-menu">
             <div class="fly">
+                <a class="button" href="#gallery">
+                    Gallery
+                </a>
+                <a class="button" href="#hot-hot">
+                    hot-key
+                </a>
+                <a class="button" href="#feedback">
+                    feedback
+                </a>
+                <a class="button" href="#table">
+                    table
+                </a>
+
+
                 <a href="https://flukeout.github.io/" class=" button icon setting" target="_blank">
                     Css Diner
                 </a>
@@ -31,7 +45,7 @@
 
         </div>
         <div class="content">
-            <div class="fishes">
+            <div id="gallery" class="page fishes">
                 <div class="fish">
                     <div class="header">
                         Fish 1
@@ -39,11 +53,11 @@
                     <div class="image-block">
                         <div class="icon edit"></div>
                         <div class="image">
-                        
+
                             <img src="images/fish1.jpg" />
                         </div>
                     </div>
-                   
+
                     <div class="buttons">
                         <div class="button">B1</div>
                         <div class="button">B2</div>
@@ -62,7 +76,7 @@
                         <div class="button">B3</div>
                     </div>
                 </div>
-                <div class="fish">
+                <div class="fish" id="sword">
                     <div class="header">
                         Fish 1
                     </div>
@@ -94,7 +108,7 @@
                     <div class="image-block">
                         <div class="icon edit"></div>
                         <div class="image">
-                        
+
                             <img src="images/fish1.jpg" />
                         </div>
                     </div>
@@ -104,14 +118,14 @@
                         <div class="button">B3</div>
                     </div>
                 </div>
-                <div class="fish">
+                <div class="fish" id="sad">
                     <div class="header">
                         Fish 1
                     </div>
                     <div class="image-block">
                         <div class="icon edit"></div>
                         <div class="image">
-                        
+
                             <img src="images/fish1.jpg" />
                         </div>
                     </div>
@@ -201,7 +215,7 @@
                 </div>
             </div>
 
-            <div id="hot-hot" class="hot-key-block">
+            <div id="hot-hot" class="page hot-key-block">
                 <div class="header">
                     HOT KEYS
                 </div>
@@ -219,6 +233,129 @@
                 <div class="hot-key">
                     F5
                 </div>
+            </div>
+
+            <div id="feedback" class="page">
+                <div class="form">
+                    <div class="row">
+                        <label>
+                            Name: <input type="text" placeholder="Например: Лиза" />
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>
+                            Password: <input type="password" placeholder="Например: 123456" />
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        <label>
+                            Age: <input type="number" min="6" max="100" placeholder="Минимум 6" />
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        Sex: Male <input type="radio" name="sex" />
+                        Female <input type="radio" name="sex" />
+                    </div>
+
+                    <div class="row">
+                        Eye color:
+                        <label for="brown-eye">Brown</label>
+                        <input id="brown-eye" type="radio" name="Eye" />
+                        <label>
+                            White <input type="radio" name="Eye" />
+                        </label>
+                        <label>
+                            Green <input type="radio" name="Eye" />
+                        </label>
+                    </div>
+
+                    <div>
+                        Habbie:
+                        <label>
+                            Gitar <input type="checkbox" name="Habbie" />
+                        </label>
+                        <label>
+                            Fish <input disabled type="checkbox" name="Habbie" />
+                        </label>
+                        <label>
+                            Dance <input type="checkbox" name="Habbie" />
+                        </label>
+                    </div>
+
+                    <div>
+                        Country:
+                        <select>
+                            <optgroup label="Near">
+                                <option>Rus</option>
+                                <option>Bel</option>
+                                <option>Pol</option>
+                            </optgroup>
+                            <optgroup label="Far">
+                                <option>Us</option>
+                                <option disabled>UK</option>
+                                <option>China</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        Birthday: <input type="date" />
+                    </div>
+                    <div class="row">
+                        Birthday: <input type="time" />
+                    </div>
+                    <div class="row">
+                        Color: <input type="color" />
+                    </div>
+
+                    <div class="row">
+
+                        Salery: <input type="range" min="10" value="50" max="120" step="10"
+                            oninput="this.nextElementSibling.value = this.value" />
+                        <output>50</output>
+                    </div>
+                    <div>
+                        <input type="submit" value="Отправить" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="table">
+                <table>
+                    <tr>
+                        <td>
+                            1 1 Smile smile
+                        </td>
+                        <td colspan="2">
+                            1 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2 1 Smile smile 
+                        </td>
+                        <td>
+                            2 2
+                        </td>
+                        <td rowspan="2">
+                            2 3
+                        </td>
+                        <td>
+                            2 4 Smile smile
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            3 1
+                        </td>
+                        <td>
+                            3 2
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
